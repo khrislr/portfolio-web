@@ -1,0 +1,33 @@
+*{
+    font-family: 'Mukta', sans-serif;
+    box-sizing: border-box;
+}
+
+.introduction{
+    margin: 50px 0 0 50px;
+}
+
+.my-name > h1{
+    margin: 0;
+}
+.my-name > h6{
+    margin: 0;
+}
+
+.techs-container{
+    display: flex;
+    flex-direction: column;
+}
+.techs-container > h1 {
+    text-align: center;
+}
+
+.techs-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.techs-boxes > h4 {
+    text-align: center;
+}
