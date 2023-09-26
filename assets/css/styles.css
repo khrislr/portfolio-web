@@ -1,6 +1,16 @@
 *{
     font-family: 'Mukta', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    background-color: #3E517A;
+}
+
+.second{
+    background-color: #70CAD1;
 }
 
 .introduction{
@@ -17,9 +27,11 @@
 .techs-container{
     display: flex;
     flex-direction: column;
+    height: 170px;
 }
 .techs-container > h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 .techs-boxes{
@@ -31,3 +43,112 @@
 .techs-boxes > h4 {
     text-align: center;
 }
+
+.w-50-percent{
+    width: 50%;
+}
+
+.techs-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.third > h1 {
+    text-align: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 550px) {
+    .projects-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 0;
+    box-shadow: 15px 15px 0 -2.5px #fff, 15px 15px 0 0 #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.card-content{
+    margin: 20px 10px 0 10px;
+    text-align: center;
+}
+
+.see-more {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+   }
+   
+   .see-more:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+   }
+   
+   .see-more:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+   }
+   
+   .see-more:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+   }
+   
+   .see-more:focus {
+    outline: 1px transparent;
+   }
+   
+   .see-more:before {
+    display: none;
+   }
+   
+   .see-more:-webkit-details-marker {
+    display: none;
+   }
