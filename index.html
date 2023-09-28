@@ -15,14 +15,17 @@
     />
     <!--STYLE SHEET-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   </head>
 
   <body>
     <section class="first">
       <div class="introduction">
         <div class="my-name">
-          <h6>Hello, I'm</h6>
-          <h1>Khristian Ledezma</h1>
+          <h6 class="m-0">Hello, I'm</h6>
+          <h1 class="m-0">Khristian Ledezma</h1>
         </div>
         <div class="profession">
           <h1>Full Stack Web Developer</h1>
@@ -78,31 +81,118 @@
           />
         </div>
       </div>
+      <div class="" style="text-align: center">
+        <h4>Who am I</h4>
+        <p>
+          Soy un desarrollador web capacitado para crear aplicaciones web
+          robustas, full responsive y con código escalable. Te invito a ver las
+          tecnologías que uso y mis proyectos principales que he realizado.
+        </p>
+      </div>
     </section>
-    <div class="" style="text-align: center">
-      <h4>Who am I</h4>
-      <p>
-        Soy un desarrollador web capacitado para crear aplicaciones web
-        robustas, full responsive y con código escalable. Te invito a ver las
-        tecnologías que uso y mis proyectos principales que he realizado.
-      </p>
-    </div>
+
     <section class="third">
       <h1>Projects</h1>
       <div class="projects-container">
         <div class="card">
           <div class="card-content">
             <h4>Portfolio web</h4>
-            <p>A site to perform my skills and projects. Made with HTML, CSS and JavaScript</p>
+            <p>
+              A site to perform my skills and projects. Made with HTML, CSS and
+              JavaScript.
+            </p>
           </div>
-          <a href="https://github.com/khrislr/portfolio-web" target="_blank"><button class="see-more">See Repo</button></a>
-          
+          <a href="https://github.com/khrislr/portfolio-web" target="_blank"
+            ><button class="see-more">See Repo</button></a
+          >
         </div>
-        <div class="card"></div>
+        <div class="card">
+          <div class="card-content">
+            <h4>Web app WhatsApp bot</h4>
+            <p>
+              A web app where any person can configure a WhatsApp bot for their
+              commerce. Includes a client and admin dashboard. Made with NestJS,
+              NodeJS, Prisma, MySQL, ReactJS and Boostrap.
+            </p>
+          </div>
+          <a href="#" target="_blank"
+            ><button class="see-more">Contact me</button></a
+          >
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4>WhatsApp bot</h4>
+            <p>
+              A backend project using Leifer Mendez's library. Made with NodeJs
+              and Baileys.
+            </p>
+          </div>
+          <a href="https://github.com/khrislr/portfolio-web" target="_blank"
+            ><button class="see-more">See Repo</button></a
+          >
+        </div>
       </div>
     </section>
     <section class="footer">
-      <footer></footer>
+      <footer>
+        <div>
+          <form class="form-container" id="form">
+            <h2>Contact me</h2>
+            <div class="field">
+              <label for="emailjs_name">Name</label>
+              <input
+                type="text"
+                name="emailjs_name"
+                id="emailjs_name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="emailjs_email">Email</label>
+              <input
+                type="text"
+                name="emailjs_email"
+                id="emailjs_email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="emailjs_message"> Message</label>
+              <textarea
+                name="emailjs_message"
+                id="emailjs_message"
+                required
+                cols="23" rows="10"
+              ></textarea>
+            </div>
+
+            <button type="submit" id="button" value="Send Email">Send</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <h2>Follow me</h2>
+          <div>
+            <a href="https://www.linkedin.com/in/khristianledezma/" target="_blank" class="media-link"><img src="./assets/img/linkedin-icon.svg" width="50"
+              height="50" alt=""></a>
+            <a href="https://github.com/khrislr" target="_blank" class="media-link"><img src="./assets/img/github-mark-white.svg" width="50" height="50" alt=""></a>
+          </div>
+        </div>
+      </footer>
     </section>
+
+    <script src="./assets/js/main.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("RVf7kxVCntNU3q05g");
+    </script>
   </body>
 </html>
