@@ -1,4 +1,4 @@
-const btn = document.getElementById('button');
+let btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
@@ -18,3 +18,7 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+function cambiarboton() {
+  var i = (document.getElementById("boton").value = "enviado");
+}

@@ -27,6 +27,7 @@
 
 .profession > h1 {
   color: #FEFCFB;
+  font-size: 30px;
 }
 
 
@@ -45,12 +46,12 @@
 }
 
 .my-name > h1{
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .my-name > h6 {
   color: #dad3d0;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .skills-container {
@@ -300,4 +301,8 @@ input, textarea{
 
 .media-link{
   margin: 30px;
+}
+
+#boton{
+  cursor: pointer;
 }
