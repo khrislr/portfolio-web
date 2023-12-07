@@ -18,7 +18,3 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
-
-function cambiarboton() {
-  var i = (document.getElementById("boton").value = "enviado");
-}
